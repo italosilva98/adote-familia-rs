@@ -1,0 +1,35 @@
+.button-help {
+  //background: #00923F;
+  background: #A40000;
+  color: #fff !important;
+  font-size: 20px;
+  width: 300px;
+}
+
+
+.center {
+  text-align: center;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.info-details {
+  width: 80%;
+}
+
+@media screen and (max-width: 992px) {
+  .info-details {
+    width: 100%;
+  }
+}
+
+
+.card-title {
+  font-weight: 700;
+  font-size: 24px;
+}

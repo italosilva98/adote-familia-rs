@@ -1,0 +1,58 @@
+.container-donation {
+  padding: 40px;
+}
+
+@media screen and (max-width: 992px) {
+  .container-donation {
+    padding: 0;
+  }
+}
+
+.donation {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px
+}
+
+@media screen and (max-width: 992px) {
+
+  .donation {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px
+  }
+
+}
+
+.card-donation {
+  width: 40%;
+  height: 50px;
+  background: #A40000;
+  color: #fff;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 992px) {
+
+  .card-donation {
+    width: 90%;
+    height: 50px;
+    background: #A40000;
+    color: #fff;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

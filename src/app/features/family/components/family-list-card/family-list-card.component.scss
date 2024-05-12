@@ -1,0 +1,62 @@
+.row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sub-title {
+  font-weight: 700;
+  font-size: 35px;
+  text-align: center;
+  margin-top: 30px;
+
+}
+
+.example-card {
+  align-items: center;
+  text-align: center;
+}
+
+.button-help {
+  //background: #00923F;
+  background: #A40000;
+  color: #fff !important;
+  font-size: 20px;
+  width: 300px;
+}
+
+@media screen and (max-width: 992px) {
+  .button-help {
+    //background: #00923F;
+    background: #A40000;
+    color: #fff !important;
+    font-size: 20px;
+    width: 260px;
+  }
+}
+
+.title-family {
+  font-weight: 700;
+  font-size: 14px;
+
+  margin-bottom: 4px;
+}
+
+.title-visualization {
+  font-size: 12px;
+  margin-bottom: 4px;
+
+}
+
+.title-description {
+  font-size: 12px;
+}
+
+.card-title {
+  font-weight: 700;
+
+}
+
+.row {
+  display: flex;
+  justify-content: space-between !important;
+}

@@ -1,0 +1,25 @@
+.slide-show {
+  margin-top: 1%;
+  padding: 1%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slide-show>div {
+  width: 50%;
+}
+
+@media screen and (max-width: 992px) {
+  .slide-show>div {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .slide-show {
+    padding: 1%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}

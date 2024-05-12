@@ -1,0 +1,15 @@
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class FamilyService {
+
+  constructor(private http: HttpClient) { }
+
+  getJsonData(): Observable<any> {
+    return this.http.get('/assets/db/dados.json');
+  }
+}

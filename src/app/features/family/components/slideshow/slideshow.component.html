@@ -1,0 +1,100 @@
+<!-- <div class="w3-content" style="max-width: 600px; left: 0">
+  <ng-container *ngFor="let media of teste; let first = first">
+    <img
+      *ngIf="media['tipo'] == 'img' && first"
+      class="mySlides"
+      [src]="'assets/img/' + media['url']"
+      style="width: 100%"
+    />
+    <img
+      *ngIf="media['tipo'] == 'img' && !first"
+      class="mySlides"
+      [src]="'assets/img/' + media['url']"
+      style="width: 100%; display: none"
+    />
+    <div
+      class="mySlides video"
+      *ngIf="media['tipo'] == 'video' && first"
+      style="width: 100%"
+    >
+      <video controls>
+        <source [src]="'assets/videos/' + media['url']" type="video/mp4" />
+      </video>
+    </div>
+    <div
+      class="mySlides video"
+      style="width: 100%; display: none"
+      *ngIf="media['tipo'] == 'video' && !first"
+    >
+      <video controls>
+        <source [src]="'assets/videos/' + media['url']" type="video/mp4" />
+      </video>
+    </div>
+  </ng-container>
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col s4" *ngFor="let media of teste; let index = index">
+      <img
+        class="demo w3-opacity w3-hover-opacity-off slide-show-image"
+        src="assets/img/banner.png"
+        style="width: 100%; cursor: pointer"
+        (click)="currentDiv(index + 1)"
+      />
+    </div>
+  </div>
+</div> -->
+
+<div class="w3-content" style="max-width: 600px; left: 0" *ngIf="teste">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <ng-container
+        *ngFor="let item of teste; let first = first; let index = index"
+      >
+        <li
+          data-target="#myCarousel"
+          [attr.data-slide-to]="index"
+          [ngClass]="{ active: first }"
+        ></li>
+      </ng-container>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <ng-container
+        *ngFor="let media of teste; let first = first; let index = index"
+      >
+        <div
+          class="item"
+          *ngIf="media['tipo'] == 'img'"
+          [ngClass]="{ active: first }"
+        >
+          <img
+            class="media"
+            [src]="'assets/img/' + media['url']"
+            style="width: 100%"
+          />
+        </div>
+
+        <div
+          class="item"
+          *ngIf="media['tipo'] == 'video'"
+          [ngClass]="{ active: first }"
+        >
+          <video class="media" controls>
+            <source [src]="'assets/videos/' + media['url']" type="video/mp4" />
+          </video>
+        </div>
+      </ng-container>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>

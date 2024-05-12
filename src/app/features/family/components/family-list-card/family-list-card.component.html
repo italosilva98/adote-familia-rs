@@ -1,0 +1,40 @@
+<div class="section scrollspy" id="work">
+  <div class="container">
+    <h3 class="center card-title">{{ title }}</h3>
+    <div class="row">
+      <div
+        class="col s12 m4 l4"
+        *ngFor="let family of data; let last = last"
+        [ngClass]="{ 'col-4': last }"
+      >
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="assets/img/not-found.jpg" />
+          </div>
+          <div class="card-content">
+            <div class="center">
+              <span class="card-title activator grey-text text-darken-4">{{
+                family.NOME
+              }}</span>
+              <p style="margin-bottom: 6px" style="visibility: hidden;">
+                <i class="fa-solid fa-eye"></i>215 visualizações
+              </p>
+            </div>
+            <p style="margin-bottom: 20px" *ngIf="family.CIDADE">
+              localização: {{ family.CIDADE }}
+            </p>
+            <div class="center">
+              <button
+                mat-button
+                class="button-help"
+                (click)="navigate(family.NOME)"
+              >
+                Saiba mais e ajude agora
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

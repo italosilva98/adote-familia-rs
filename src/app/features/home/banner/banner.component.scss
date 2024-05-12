@@ -1,0 +1,84 @@
+@media screen and (min-width: 992px) {
+
+  .banner {
+    height: 400px;
+    width: 100%;
+    background-image: url("../../../../assets/img/banner.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    padding: 40px;
+  }
+
+}
+
+
+@media screen and (max-width: 992px) {
+  .banner {
+    width: 100%;
+    background-image: url("../../../../assets/img/banner.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    padding: 15px;
+  }
+}
+
+
+.card-title {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.promo-caption {
+  font-weight: 700;
+
+}
+
+.title {
+  color: #fff;
+
+  font-weight: 700;
+  font-size: 35px;
+}
+
+@media screen and (max-width: 992px) {
+  .title {
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px !important;
+  }
+}
+
+.options {
+  margin-top: 30px;
+  text-align: center;
+
+  .row {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .sub-title {
+    font-weight: 700;
+    font-size: 35px;
+  }
+
+  .title-options {
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 10px;
+    height: 20px;
+
+  }
+
+  .sub-title-options {
+    font-size: 10px;
+  }
+}
+
+
+.button-help {
+  background: #00923F;
+  color: #fff !important;
+}

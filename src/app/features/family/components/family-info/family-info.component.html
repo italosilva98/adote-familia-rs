@@ -1,0 +1,33 @@
+<div class="container-info">
+  <div class="info">
+    <div class="row">
+      <div class="col s12">
+        <h3 class="center">Nosso movimento de solidariedade e união</h3>
+      </div>
+    </div>
+    <div class="info-details">
+      <div class="card-content">
+        <div class="center">
+          <span class="card-title activator grey-text text-darken-4">{{
+            family.NOME
+          }}</span>
+          <p style="margin-bottom: 6px" style="visibility: hidden;">
+            <i class="fa-solid fa-eye"></i>215 visualizações
+          </p>
+          <button
+            mat-button
+            class="button-help"
+            style="margin-bottom: 15px"
+            (click)="navigate()"
+          >
+            Envie o PIX
+          </button>
+        </div>
+
+        <p>
+          {{ family.HISTORIA }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
